@@ -16,8 +16,7 @@
   align-items: center;
 }
 
-main,
-#evaluation-form {
+main , #evaluation-form {
   display: flex;
 }
 
