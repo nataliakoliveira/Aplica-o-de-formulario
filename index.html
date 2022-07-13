@@ -17,15 +17,16 @@
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form action="" class="trybewarts-login" method="get">
         <label for="email"></label>
-        <input type="text" id="email" name="email" placeholder="Email" />
+        <input type="text" id="email" name="email" placeholder="Email" class="css-input" />
         <label for="password"></label>
         <input
           type="password"
           id="password"
           name="password"
           placeholder="Senha"
+          class="css-input"
         />
-        <button type="submit">Entrar</button>
+        <button type="submit" id="btn-header">Entrar</button>
       </form>
     </header>
     <main>
@@ -51,7 +52,7 @@
         <br>
         <section id="email-select">
           <label for="input-email"></label>
-          <input type="email" id="input-email" placeholder="Email" />
+          <input type="email" id="input-email" placeholder="Email" class="css-input"/>
           <select name="house" id="house">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -65,8 +66,10 @@
           <div class="radio-inputs">
             <input id="frontend" type="radio" name="family" value="Frontend" />
             Frontend
+            
             <input id="backend" type="radio" name="family" value="Backend" />
             Backend
+            
             <input
               id="fullstack"
               type="radio"
@@ -116,9 +119,9 @@
         </section>
         <br>
         <section id="validation">
-          <label for="" id="label-infos"><strong>Você concorda com o uso das informações acima?</strong>
+          <label for="" id="label-infos">
           </label>
-          <input type="checkbox" id="agreement">
+          <input type="checkbox" id="agreement"><strong>Você concorda com o uso das informações acima?</strong>
         </section>
         <section>
           <label for="submit-btn"></label>
