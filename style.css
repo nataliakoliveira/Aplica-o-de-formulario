@@ -29,7 +29,7 @@ main , #evaluation-form {
   height: 500px;
 }
 
-.radio-inputs {
+.radio-inputs, #checkbox {
   display: flex;
   flex-direction: column;
 }
