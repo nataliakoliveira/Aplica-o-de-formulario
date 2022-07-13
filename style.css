@@ -8,3 +8,8 @@
   display: flex;
   background-color: rgb(50, 167, 145);
 }
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
