@@ -3,6 +3,8 @@ const password = document.getElementById('password');
 const submitLogin = document.querySelector('button');
 const agreement = document.querySelector('#agreement');
 const submitButton = document.querySelector('#submit-btn');
+const counter = document.querySelector('#counter');
+const textarea = document.getElementById('textarea');
 
 submitLogin.addEventListener('click', (e) => {
   console.log(email.value, password.value);
@@ -16,4 +18,10 @@ submitLogin.addEventListener('click', (e) => {
 
 agreement.addEventListener('change', () => {
   submitButton.disabled = !agreement.checked;
+});
+
+textarea.addEventListener('keyup', () => {
+  const characterCount = textarea.value.length;
+  // console.log(textarea.value.length);
+  counter.innerText = textarea.maxLength - characterCount;
 });
