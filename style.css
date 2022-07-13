@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 20px;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -29,7 +33,7 @@ main , #evaluation-form {
   height: 500px;
 }
 
-.radio-inputs, #checkbox {
+.radio-inputs , #checkbox {
   display: flex;
   flex-direction: column;
 }
