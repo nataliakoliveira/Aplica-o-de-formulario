@@ -166,7 +166,6 @@ div.react , div.sql , div.python {
   display: flex;
   padding-left: 30px;
 }
-<<<<<<< HEAD
 #input-radio {
   border: 1em solid red;
   display: flex;
@@ -177,5 +176,3 @@ div.react , div.sql , div.python {
   display: flex;
   
 }
-=======
->>>>>>> 876c7c72bf5e388024c29c1fb56bb58ae7464ca2

@@ -19,18 +19,21 @@ const emailInput = document.querySelector('#input-email');
 const houseData = document.querySelector('#house-data');
 const houseInput = document.querySelector('#house');
 // familia
-// const familyInput = document.getElementsbyName('family');
+const familyInput = document.getElementsByName('family');
 const familyData = document.querySelector('#family-data');
-
-// const subjectInput = document.getElementsByClassName('subject');
-
+//materia
+const subjectInput = document.getElementsByClassName('subject');
+const subjectData = document.querySelector('#subject-data');
+// avaliação
 const rateData = document.querySelector('#rate-data');
-// const rateInput = document.getElementsByName('rate');
+const rateInput = document.getElementsByName('rate');
 
 const obsData = document.querySelector('#obs-data');
 
+
+
 submitLogin.addEventListener('click', (e) => {
-  console.log(email.value, password.value);
+  // console.log(email.value, password.value);
   e.preventDefault();
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
     alert('Olá, Tryber!');
@@ -49,6 +52,25 @@ textarea.addEventListener('keyup', () => {
   counter.innerText = textarea.maxLength - characterCount;
 });
 
+function getRadioData (inputedData) {
+  for(let input of inputedData) {
+    if(input.checked) {
+      return input.value;
+    }
+  }
+}
+
+function getCheckboxData (checkedData) {
+  let checkedList = [];
+  for(let oneChecked of checkedData) {
+    if(oneChecked.checked) {
+      checkedList.push(oneChecked.value);
+    }
+  }
+  // console.log(checkedList);
+  return checkedList.join(', ');
+}
+
 submitButton.addEventListener('click', (e) => {
   main.style.display = 'none';
   e.preventDefault();
@@ -56,5 +78,8 @@ submitButton.addEventListener('click', (e) => {
   nameData.innerText = `Nome: ${nameInput.value} ${lastNameInput.value}`;
   emailData.innerText = `Email: ${emailInput.value}`;
   houseData.innerText = `Casa: ${houseInput.options[houseInput.selectedIndex].value}`;
+  familyData.innerText = `Familia: ${getRadioData(familyInput)}`;
+  subjectData.innerText = `Matérias: ${getCheckboxData(subjectInput)}`;
+  rateData.innerText = `Avaliação: ${getRadioData(rateInput)}`;
   obsData.innerText = `Observações: ${textarea.value}`;
 });
