@@ -1,3 +1,8 @@
+/* stylelint-disable font-weight-notation */
+/* stylelint-disable length-zero-no-unit */
+/* stylelint-disable font-family-name-quotes */
+/* stylelint-disable selector-list-comma-space-after */
+/* stylelint-disable comment-empty-line-before */
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +10,9 @@
 }
 
 body {
-  padding: 20px;
+  padding: 10px;
   background-color: #f4f1de;
+  padding-left: 10px;
 }
 
 .header {
@@ -14,11 +20,12 @@ body {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  height: 10%;
 }
-img.trybewarts-header-logo {
-  width: 10%;
+
+.trybewarts-header-logo {
+  width: 5%;
 }
+
 #trybewarts-header-title {
   color: white;
 }
@@ -29,7 +36,8 @@ img.trybewarts-header-logo {
   padding-right: 20px;
 }
 
-main , #evaluation-form {
+main ,
+#evaluation-form {
   display: flex;
 }
 
@@ -40,12 +48,16 @@ main , #evaluation-form {
 
 #trybewarts-forms-logo {
   height: 500px;
+  padding-left: 10%;
+  margin-top: 3%;
 }
 
-.radio-inputs , #checkbox {
+.radio-inputs ,
+#checkbox {
   display: flex;
   flex-direction: column;
 }
+
 footer {
   background-color: rgb(50, 167, 145);
   color: white;
@@ -53,6 +65,7 @@ footer {
   text-align: center;
   padding-top: 1em;
 }
+
 #submit-btn {
   box-shadow: inset 0px 1px 0px 0px #e184f3;
   background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
@@ -62,15 +75,15 @@ footer {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
   font-size: 15px;
   font-weight: bold;
-  padding: 6px 310px;
+  padding: 6px 284px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #9b14b3;
   margin-bottom: 1em;
   margin-top: 10px;
 }
+
 #btn-header {
   box-shadow: inset 0px 1px 0px 0px #e184f3;
   background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
@@ -86,8 +99,8 @@ footer {
   padding: 6px 24px;
   text-decoration: none;
 }
+
 #house {
-  font-family: "Arial";
   display: inline-block;
   cursor: pointer;
   padding: 7px 15px;
@@ -97,39 +110,43 @@ footer {
   background: #e6e6e6;
   color: #7b7b7b;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  width: 42%;
+  margin-left: 1px;
 }
+
 .css-input {
   padding: 5px;
-  font-size: 16px;
+  font-size: 14px;
   border-width: 1px;
   border-color: #b62bb1;
   background-color: #ffffff;
-  color: black
   border-style: double;
   border-radius: 15px;
   box-shadow: 1px 0px 5px rgba(194, 66, 179, 0.75);
   text-shadow: 0px 0px 1px rgba(190, 21, 159, 0.75);
 }
-input#input-name.css-input {
+
+#input-name.css-input {
   height: 31px;
 }
-h2{
+
+h2 {
   text-align: center;
   padding: 10px;
+  color: black;
+  font-size: 30px;
 }
+
 #input-name {
   width: 48%;
 }
+
 #input-lastname {
-  width: 48%;
+  width: 50%;
 }
+
 #input-email {
   width: 48%;
-}
-#house {
-  width: 35%;
 }
 
 #form-data {
@@ -137,45 +154,97 @@ h2{
   flex-direction: column;
 }
 
-.radio-inputs {
-}
-div.frontend , div.backend , div.fullstack {
-  font-family: arial;
+.frontend ,
+.backend ,
+.fullstack {
   padding-left: 30px;
   margin-bottom: 5px;
   padding-top: 3px;
   cursor: pointer;
   font-size: 16px;
 }
-.control_indicator{
 
-}
-section#checkbox {
+#checkbox {
   display: flex;
-  border: 1em solid red;
-  height: 200px;
+  height: 100px;
   width: 500px;
 }
-.parte1 , .parte2 {
+
+.parte1 ,
+.parte2 {
   display: flex;
+  padding-top: 1%;
 }
-div.hofs , div.jest , div.promises {
-  padding-left: 30px;
+
+.hofs ,
+.jest ,
+.promises {
+  padding-left: 40px;
 }
-div.react , div.sql , div.python {
+
+.react ,
+.sql ,
+.python {
   display: flex;
-  padding-left: 30px;
+  padding-left: 40px;
 }
-<<<<<<< HEAD
+
 #input-radio {
-  border: 1em solid red;
   display: flex;
-  height: 130px;
+  justify-content: start;
+  flex-direction: column;
   width: 300px;
 }
-.parte-meio{
+
+.parte-meio {
   display: flex;
-  
+
 }
-=======
->>>>>>> 876c7c72bf5e388024c29c1fb56bb58ae7464ca2
+
+#evaluation {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#comment-area {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.jest ,
+.promises {
+  padding-left: 45px;
+}
+
+#label-family {
+  width: 150px;
+  height: 40%;
+  text-align: center;
+}
+
+#counter {
+  position: absolute;
+  display: flex;
+  width: 5%;
+  z-index: 1;
+  margin-top: 9.5%;
+  margin-left: 38.5%;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #9b14b3;
+}
+
+.text-area {
+  position: absolute;
+}
+
+form {
+  padding-left: 5%;
+  font-family: 'Lexend Giga', sans-serif;
+}
+/* stylelint-disable-next-line rule-empty-line-before */
+#label-content {
+  line-height: 1.5em;
+}
