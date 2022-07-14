@@ -131,3 +131,32 @@ h2{
 #house {
   width: 35%;
 }
+.radio-inputs {
+}
+div.frontend, div.backend, div.fullstack {
+  font-family: arial;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.control_indicator {
+
+}
+#checkbox {
+  display: flex;
+  border: 1em solid red;
+  height: 200px;
+  width: 500px;
+}
+.parte1, .parte2{
+  display: flex;
+}
+div.hofs, div.jest, div.promises{
+  padding-left: 30px;
+}
+div.react, div.sql, div.python{
+  padding-left: 30px;
+}
+
