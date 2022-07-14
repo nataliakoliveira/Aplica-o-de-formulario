@@ -19,10 +19,10 @@ const emailInput = document.querySelector('#input-email');
 const houseData = document.querySelector('#house-data');
 const houseInput = document.querySelector('#house');
 // familia
-const familyInput = document.getElementsbyName('family');
+// const familyInput = document.getElementsbyName('family');
 const familyData = document.querySelector('#family-data');
 
-const subjectInput = document.getElementsByClassName('subject');
+// const subjectInput = document.getElementsByClassName('subject');
 
 const rateData = document.querySelector('#rate-data');
 // const rateInput = document.getElementsByName('rate');
@@ -56,6 +56,5 @@ submitButton.addEventListener('click', (e) => {
   nameData.innerText = `Nome: ${nameInput.value} ${lastNameInput.value}`;
   emailData.innerText = `Email: ${emailInput.value}`;
   houseData.innerText = `Casa: ${houseInput.options[houseInput.selectedIndex].value}`;
-
   obsData.innerText = `Observações: ${textarea.value}`;
 });
