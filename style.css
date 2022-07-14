@@ -16,10 +16,10 @@ body {
   align-items: center;
   height: 10%;
 }
-img.trybewarts-header-logo{
+img.trybewarts-header-logo {
   width: 10%;
 }
-#trybewarts-header-title{
+#trybewarts-header-title {
   color: white;
 }
 
@@ -46,7 +46,7 @@ main , #evaluation-form {
   display: flex;
   flex-direction: column;
 }
-footer{
+footer {
   background-color: rgb(50, 167, 145);
   color: white;
   height: 50px;
@@ -86,7 +86,7 @@ footer{
   padding: 6px 24px;
   text-decoration: none;
 }
-#house{
+#house {
   font-family: "Arial";
   display: inline-block;
   cursor: pointer;
@@ -106,14 +106,14 @@ footer{
   border-width: 1px;
   border-color: #b62bb1;
   background-color: #ffffff;
-  color: #b4a3b3;
+  color: black
   border-style: double;
   border-radius: 15px;
   box-shadow: 1px 0px 5px rgba(194, 66, 179, 0.75);
   text-shadow: 0px 0px 1px rgba(190, 21, 159, 0.75);
 }
-input#input-name.css-input{
-    height: 31px;
+input#input-name.css-input {
+  height: 31px;
 }
 h2{
   text-align: center;
@@ -133,7 +133,7 @@ h2{
 }
 .radio-inputs {
 }
-div.frontend, div.backend, div.fullstack {
+div.frontend , div.backend , div.fullstack {
   font-family: arial;
   padding-left: 30px;
   margin-bottom: 5px;
@@ -141,22 +141,32 @@ div.frontend, div.backend, div.fullstack {
   cursor: pointer;
   font-size: 16px;
 }
-.control_indicator {
+.control_indicator{
 
 }
-#checkbox {
+section#checkbox {
   display: flex;
   border: 1em solid red;
   height: 200px;
   width: 500px;
 }
-.parte1, .parte2{
+.parte1 , .parte2 {
   display: flex;
 }
-div.hofs, div.jest, div.promises{
+div.hofs , div.jest , div.promises {
   padding-left: 30px;
 }
-div.react, div.sql, div.python{
+div.react , div.sql , div.python {
+  display: flex;
   padding-left: 30px;
 }
-
+#input-radio {
+  border: 1em solid red;
+  display: flex;
+  height: 130px;
+  width: 300px;
+}
+.parte-meio{
+  display: flex;
+  
+}
