@@ -131,3 +131,10 @@ h2{
 #house {
   width: 35%;
 }
+
+#form-data {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
