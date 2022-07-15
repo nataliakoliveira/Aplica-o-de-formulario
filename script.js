@@ -62,8 +62,8 @@ function getRadioData (inputedData) {
 
 function getCheckboxData (checkedData) {
   let checkedList = [];
-  for(let oneChecked of checkedData) {
-    if(oneChecked.checked) {
+  for(const oneChecked of checkedData) {
+    if (oneChecked.checked) {
       checkedList.push(oneChecked.value);
     }
   }
@@ -78,7 +78,7 @@ submitButton.addEventListener('click', (e) => {
   nameData.innerText = `Nome: ${nameInput.value} ${lastNameInput.value}`;
   emailData.innerText = `Email: ${emailInput.value}`;
   houseData.innerText = `Casa: ${houseInput.options[houseInput.selectedIndex].value}`;
-  familyData.innerText = `Familia: ${getRadioData(familyInput)}`;
+  familyData.innerText = `Família: ${getRadioData(familyInput)}`;
   subjectData.innerText = `Matérias: ${getCheckboxData(subjectInput)}`;
   rateData.innerText = `Avaliação: ${getRadioData(rateInput)}`;
   obsData.innerText = `Observações: ${textarea.value}`;
