@@ -50,7 +50,7 @@ textarea.addEventListener('keyup', () => {
   counter.innerText = textarea.maxLength - characterCount;
 });
 
-function getRadioData (inputedData) {
+function getRadioData(inputedData) {
   for (const input of inputedData) {
     if (input.checked) {
       return input.value;
@@ -58,7 +58,7 @@ function getRadioData (inputedData) {
   }
 }
 
-function getCheckboxData (checkedData) {
+function getCheckboxData(checkedData) {
   let checkedList = [];
   for (let oneChecked of checkedData) {
     if (oneChecked.checked) {
