@@ -21,7 +21,7 @@ const houseInput = document.querySelector('#house');
 // familia
 const familyInput = document.getElementsByName('family');
 const familyData = document.querySelector('#family-data');
-//materia
+// materia
 const subjectInput = document.getElementsByClassName('subject');
 const subjectData = document.querySelector('#subject-data');
 // avaliação
@@ -29,8 +29,6 @@ const rateData = document.querySelector('#rate-data');
 const rateInput = document.getElementsByName('rate');
 
 const obsData = document.querySelector('#obs-data');
-
-
 
 submitLogin.addEventListener('click', (e) => {
   // console.log(email.value, password.value);
@@ -53,8 +51,8 @@ textarea.addEventListener('keyup', () => {
 });
 
 function getRadioData (inputedData) {
-  for(let input of inputedData) {
-    if(input.checked) {
+  for (const input of inputedData) {
+    if (input.checked) {
       return input.value;
     }
   }
@@ -62,8 +60,8 @@ function getRadioData (inputedData) {
 
 function getCheckboxData (checkedData) {
   let checkedList = [];
-  for(let oneChecked of checkedData) {
-    if(oneChecked.checked) {
+  for (let oneChecked of checkedData) {
+    if (oneChecked.checked) {
       checkedList.push(oneChecked.value);
     }
   }
@@ -78,7 +76,7 @@ submitButton.addEventListener('click', (e) => {
   nameData.innerText = `Nome: ${nameInput.value} ${lastNameInput.value}`;
   emailData.innerText = `Email: ${emailInput.value}`;
   houseData.innerText = `Casa: ${houseInput.options[houseInput.selectedIndex].value}`;
-  familyData.innerText = `Familia: ${getRadioData(familyInput)}`;
+  familyData.innerText = `Família: ${getRadioData(familyInput)}`;
   subjectData.innerText = `Matérias: ${getCheckboxData(subjectInput)}`;
   rateData.innerText = `Avaliação: ${getRadioData(rateInput)}`;
   obsData.innerText = `Observações: ${textarea.value}`;
