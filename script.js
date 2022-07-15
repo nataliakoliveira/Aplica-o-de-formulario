@@ -51,18 +51,18 @@ textarea.addEventListener('keyup', () => {
 });
 
 function getRadioData(inputedData) {
-  for (const input of inputedData) {
-    if (input.checked) {
-      return input.value;
+  for (let i = 0; i < inputedData.length; i += 1) {
+    if (inputedData[i].checked) {
+      return inputedData[i].value;
     }
   }
 }
 
 function getCheckboxData(checkedData) {
-  let checkedList = [];
-  for (let oneChecked of checkedData) {
-    if (oneChecked.checked) {
-      checkedList.push(oneChecked.value);
+  const checkedList = [];
+  for (let i = 0; i < checkedData.length; i += 1) {
+    if (checkedData[i].checked) {
+      checkedList.push(checkedData[i].value);
     }
   }
   // console.log(checkedList);
