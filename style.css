@@ -69,7 +69,7 @@ footer {
   cursor: pointer;
   color: white;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 400;
   padding: 6px 284px;
   text-decoration: none;
   text-shadow: 0 1px 0 rgb(155, 20, 179);
@@ -87,7 +87,7 @@ footer {
   cursor: pointer;
   color: white;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 400;
   padding: 6px 24px;
   text-decoration: none;
 }
@@ -97,10 +97,10 @@ footer {
   cursor: pointer;
   padding: 7px 15px;
   outline: 0;
-  border: 1px inset #be38d0;
+  border: 1px inset rgb(190, 56, 208);
   border-radius: 26px;
-  background: #e6e6e6;
-  color: #7b7b7b;
+  background: rgb(220, 209, 221);
+  color: rgb(123, 123, 123);
   appearance: none;
   width: 42%;
   margin-left: 1px;
@@ -216,7 +216,7 @@ h2 {
   margin-top: 9.5%;
   margin-left: 38.5%;
   font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Calibri, sans-serif;
   color: rgb(155, 20, 176);
 }
 
@@ -226,7 +226,7 @@ h2 {
 
 form {
   padding-left: 5%;
-  font-family: 'Lexend Giga', sans-serif;
+  font-family: sans-serif;
 }
 
 /* stylelint-disable-next-line rule-empty-line-before */
